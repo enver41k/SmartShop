@@ -1,0 +1,26 @@
+{% extends 'base.html' %}
+
+{% block title %}
+Мои заказы
+{% endblock %}
+
+{% block body %}
+<div class="container">
+    <div class="row">
+
+        {% for phone in phones %}
+        <div class="">
+            <div class="card">
+                <h2>Телефон {{phone.namephone}}</h2>
+                <h4>Имя {{phone.firstname}}</h4>
+                <h4>Фамилия {{phone.lastname}}</h4>
+                <h4>Email {{phone.email}}</h4>
+                <h4>Телефон {{phone.number}}</h4>
+                <h4>Адресс {{phone.address}}</h4>
+
+            </div>
+        </div>
+        {%endfor%}
+    </div>
+</div>
+{% endblock %}
