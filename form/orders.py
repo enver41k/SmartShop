@@ -1,4 +1,4 @@
-from flask import Flask, render_template, session, request, redirect
+from flask import Flask, render_template, session
 from flask_mysqldb import MySQL
 app = Flask(__name__)
 
