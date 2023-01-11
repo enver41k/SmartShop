@@ -31,9 +31,9 @@ def admin():
         cursor.execute(f'''INSERT INTO `phone` (`namephone`, `status`, `phonetype_idphonetype`) 
                         VALUES ('{num}', '{status}', '{s["idphonetype"]}')''')
         mysql.connection.commit()
-        msgr = 'Номер успешно создан'
+        msgr = 'Товар успешно создан'
             # elif x['namephone'] == int(num):
-            #     msg = 'Такой номер уже существует'
+            #     msg = 'Такой  уже существует'
         # except(Exception,):
         #     msg = 'Данные неверны'
 

@@ -29,7 +29,7 @@ def create_connection(host, user, password, db):
         raise e
 
 
-connect_db = create_connection('localhost', 'root', 'root', 'smartshop')
+connect_db = create_connection('localhost', 'root', 'admin', 'smartshop')
 # connect_db = create_connection('enver41k.mysql.pythonanywhere-services.com', 'enver41k', 'server123', 'enver41k$smartshop')
 
 app.add_url_rule('/', view_func=home.index)
